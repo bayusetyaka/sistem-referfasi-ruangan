@@ -1,0 +1,113 @@
+/* Mengatur video latar belakang */
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+/* Mengatur tampilan container */
+.container {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.171);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 60px auto;
+    box-shadow: 0px 4px 12px rgba(248, 248, 248, 0.63);
+}
+
+/* Gaya judul */
+h1 {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Label form */
+#reservation-form label {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input dan elemen form lainnya */
+#reservation-form input, #reservation-form select {
+    width: 100%; /* Menjadikan form selebar container */
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    box-sizing: border-box; /* Mencegah overflow */
+    background-color: rgb(231, 230, 230);
+    color: #000000;
+    transition: border-color 0.3s;
+}
+
+#reservation-form input:focus, #reservation-form select:focus {
+    border-color: #5a57ff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 255, 0, 0.5);
+}
+
+/* Daftar ruang dan reservasi */
+#room-list, #reservation-list {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Tombol di dalam container */
+.container button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%; /* Menjadikan tombol selebar form */
+}
+
+.container button:hover {
+    background-color: #004999;
+}
+
+/* Tampilan elemen reservasi */
+#reservation-list div {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Gaya tombol batal */
+#reservation-list button {
+    background-color: #cc0000;
+    color: #ffffff;
+    padding: 5px 100px;
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+#reservation-list button:hover {
+    background-color: #990000;
+}

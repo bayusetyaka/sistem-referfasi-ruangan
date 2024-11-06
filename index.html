@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Reservation System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="natu.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container text-white pt-5">
+        <h1 class="text-center mb-4">Room Reservation System</h1>
+
+        <!-- Form untuk menambah reservasi baru -->
+        <div id="reservation-form" class="bg-dark p-4 rounded">
+            <h3>Add New Reservation</h3>
+            <div class="form-group">
+                <label for="roomId">Room ID:</label>
+                <input type="number" id="roomId" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <button class="btn btn-primary" onclick="handleAddReservation()">Add Reservation</button>
+        </div>
+
+        <!-- Area untuk daftar ruangan dan reservasi -->
+        <div id="room-list" class="mt-5"></div>
+        <div id="reservation-list" class="mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS dan JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
